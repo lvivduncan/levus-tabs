@@ -1,0 +1,46 @@
+:root{
+    --primary: #fff;
+    --text: #aeb4ce;
+    --bg: #151933;
+}
+
+/* tabs */
+.tabs{
+
+}
+    .tab{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+    .pane{
+        display: flex;
+        justify-content: space-around;
+        background: var(--bg);
+    }
+
+        .tab > li{
+            color: var(--text);
+            cursor: pointer;
+        }
+
+@media(max-width:776px){
+        .tab > li{
+            padding: 10px;
+        }
+}
+
+        .tab > li.current{
+            color: var(--primary);
+            background: var(--bg);
+        }
+
+        .pane > li{
+            list-style: none;
+            display: none;
+        }
+        .pane > li.current{
+            display: block;
+            width: 100%;
+        }
