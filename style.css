@@ -4,6 +4,16 @@
     --bg: #151933;
 }
 
+ul{
+    padding: 0;
+    margin: 10px 0;
+}
+    ul li{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
 /* tabs */
 .tabs{
 
